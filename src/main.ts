@@ -7,7 +7,7 @@ async function bootstrap() {
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true, // remueve las propiedades extra en los dto enviados desde front
-      // forbidNonWhitelisted: true, => tira error para propiedades extra en los dto
+      // forbidNonWhitelisted: true, tira error para propiedades extra en los dto
     }),
   );
   await app.listen(3000);
